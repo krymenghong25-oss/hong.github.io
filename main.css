@@ -1,0 +1,92 @@
+:root{
+    --col1:orange;
+    --col2:red;
+    --col3:white;
+    --col4:gold;
+    --col5:gray;
+    --col6:rgba(255, 215, 0, 0.5);
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+}
+.header{
+    background-color: var(--col6);
+    display:flex;
+    justify-content: space-between;
+    padding:20px 25px;
+    border-bottom: 2px solid var(--col1);
+    box-shadow:2px 2px 5px var(--col5);
+    position:sticky;
+    top:0;
+    align-items: center;
+}
+.logo{
+    font-family:"curlz MT";
+    font-size:24pt;
+    font-weight: bold;
+    color:var(--col2);
+    text-shadow:2px 2px 1px var(--col5);
+}
+body{
+    height:1800px;
+}
+.menu span{
+    margin-right:15px;
+    font-size:14pt;
+}
+.home,.menu span:hover{
+    color:var(--col2);
+    text-shadow:2px 2px 1px var(--col3);
+    border-bottom:2px solid var(--col2);
+    padding-bottom:5px;
+}
+.cover{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.cover img {
+    width:49%;
+    border:3px solid vai(--col3);
+    box-shadow: 2px 3px 5px var(--col5);
+    transition-duration: 1s;
+}
+.cover img:hover{
+    transform: scale(1.05);
+}
+.navigation{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.container{
+    background-color: rgb(252, 243, 243);
+}
+.pro-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+.pro img{
+    width:100%;
+    border:3px solid var(--col3);
+    box-shadow: 2px 3px 5px var(--col5);
+}
+.pro{
+    text-align:center;
+    transition-duration: 1s;
+}
+.pro:hover{
+    transform: scale(1.05);
+    border:3px solid vai(--col3);
+    box-shadow: 2px 3px 5px var(--col5);
+}
+.pro .pro-name,.pro .pro-rate{
+    color:var(--col4);
+}
+.pro .pro-price{
+    color:var(--col2);
+    font-weight:bold;
+}
